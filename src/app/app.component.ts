@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-app';
+  loadedSection: string = "recipe"
+  
+  onNavigate(section:string){
+    this.loadedSection = section
+  }
 }
